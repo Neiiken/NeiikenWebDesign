@@ -227,8 +227,8 @@ ul,ol{margin:0;padding:0;}
 .stat-headline .serif-em{color:var(--brand-4);}
 .stat-row{display:flex;flex-wrap:wrap;gap:var(--space-10);margin-top:var(--space-12);padding-top:var(--space-10);border-top:1px solid rgba(255,255,255,.14);}
 .stat-row div{display:flex;flex-direction:column;gap:var(--space-1);}
-.stat-row strong{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:600;background:var(--grad-rainbow);-webkit-background-clip:text;background-clip:text;color:transparent;}
-.stat-row span{color:#b3b3b3;font-size:var(--text-sm);max-width:16rem;}
+.stat-row strong{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;background:linear-gradient(100deg,#c3cdd9,#e08a63);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.stat-row span{color:#c7ccd2;font-size:var(--text-sm);max-width:16rem;}
 
 /* =========================================================
    SECTEURS (bandeau)
