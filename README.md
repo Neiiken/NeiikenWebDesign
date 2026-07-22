@@ -10,6 +10,16 @@ css/style.css   styles (thème clair/sombre automatique)
 js/script.js    menu mobile + année du footer
 ```
 
+## Aperçu local
+
+Un petit serveur statique est fourni (`serve.ps1`, PowerShell) :
+
+```bash
+powershell -ExecutionPolicy Bypass -File serve.ps1
+```
+
+puis ouvrez http://localhost:8080
+
 ## Personnaliser
 
 - Éditez le texte dans `index.html` (nom, accroche, à propos, projets, compétences, liens de contact).
