@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aymeric Cambier — Portfolio</title>
+  <meta name="description" content="Portfolio d'Aymeric Cambier" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="logo">Aymeric&nbsp;Cambier</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top" class="hero container">
+      <p class="hero-eyebrow">Bonjour, je suis</p>
+      <h1>Aymeric Cambier</h1>
+      <p class="hero-tagline">Titre / rôle — courte phrase d'accroche décrivant ce que vous faites.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>À propos</h2>
+      <p>
+        Présentez-vous ici en quelques phrases : votre parcours, ce qui vous
+        passionne, et ce que vous recherchez (opportunités, collaborations,
+        projets freelance...).
+      </p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Nom du projet 1</h3>
+            <p>Courte description du projet, technologies utilisées, et résultat obtenu.</p>
+            <a href="#" class="card-link">Voir le projet →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Nom du projet 2</h3>
+            <p>Courte description du projet, technologies utilisées, et résultat obtenu.</p>
+            <a href="#" class="card-link">Voir le projet →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Nom du projet 3</h3>
+            <p>Courte description du projet, technologies utilisées, et résultat obtenu.</p>
+            <a href="#" class="card-link">Voir le projet →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Compétences</h2>
+      <ul class="tag-list">
+        <li>Compétence 1</li>
+        <li>Compétence 2</li>
+        <li>Compétence 3</li>
+        <li>Compétence 4</li>
+        <li>Compétence 5</li>
+        <li>Compétence 6</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>La meilleure façon de me joindre :</p>
+      <div class="contact-links">
+        <a href="mailto:aymeric.cambier@gmail.com">aymeric.cambier@gmail.com</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="container">&copy; <span id="year"></span> Aymeric Cambier</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
