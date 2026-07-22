@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="98" fill="#141414" stroke="#595959" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-90.00 100 100)">N</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-84.19 100 100)">E</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-78.39 100 100)">M</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-72.58 100 100)">A</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-66.77 100 100)">U</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-60.97 100 100)">S</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-55.16 100 100)">A</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-43.55 100 100)">D</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-37.74 100 100)">I</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-31.94 100 100)">G</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-26.13 100 100)">I</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-20.32 100 100)">T</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-14.52 100 100)">A</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(-8.71 100 100)">L</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(2.90 100 100)">•</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(14.52 100 100)">C</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(20.32 100 100)">R</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(26.13 100 100)">É</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(31.94 100 100)">A</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(37.74 100 100)">T</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(43.55 100 100)">I</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(49.35 100 100)">O</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(55.16 100 100)">N</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(66.77 100 100)">D</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(72.58 100 100)">E</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(84.19 100 100)">S</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(90.00 100 100)">I</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(95.81 100 100)">T</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(101.61 100 100)">E</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(107.42 100 100)">S</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(119.03 100 100)">I</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(124.84 100 100)">N</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(130.65 100 100)">T</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(136.45 100 100)">E</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(142.26 100 100)">R</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(148.06 100 100)">N</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(153.87 100 100)">E</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(159.68 100 100)">T</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(171.29 100 100)">•</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(182.90 100 100)">N</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(188.71 100 100)">Í</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(194.52 100 100)">M</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(200.32 100 100)">E</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(206.13 100 100)">S</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(217.74 100 100)">•</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(229.35 100 100)">G</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(235.16 100 100)">A</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(240.97 100 100)">R</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(246.77 100 100)">D</text>
+  <text x="100" y="24" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" transform="rotate(258.39 100 100)">•</text>
+  <g transform="translate(45.55,82.4) scale(0.55)" fill="#b5502f">
+    <polygon points="0,42 18,34 28,14 34,30 46,12 52,30 64,14 70,30 84,16 100,26 150,22 198,26 190,34 150,32 100,38 60,40 30,44"/>
+    <polygon points="70,40 78,54 84,40"/>
+    <circle cx="108" cy="25" r="3" fill="#ffffff"/>
+  </g>
+</svg>

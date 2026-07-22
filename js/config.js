@@ -7,10 +7,10 @@ window.SITE_CONFIG = {
   // Identité
   firstName: "Aymeric",
   lastName: "Cambier",
-  brand: "Aymeric Cambier",                 // nom affiché (mets un nom de studio si tu veux)
+  brand: "Nemausa Digital",                 // nom commercial (nom légal : Aymeric Cambier, micro-entreprise)
   role: "Créateur de sites internet",
   baseline: "Je crée le site qui manque à votre entreprise.",
-  city: "France",                           // ta zone (ex. « Lyon et alentours »)
+  city: "Nîmes & Gard",                     // ta zone (ex. « Lyon et alentours »)
 
   // Contact / conversion
   email: "aymeric.cambier@gmail.com",
