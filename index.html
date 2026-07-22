@@ -24,6 +24,13 @@
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="croc" viewBox="0 0 200 60">
+      <polygon fill="currentColor" points="0,42 18,34 28,14 34,30 46,12 52,30 64,14 70,30 84,16 100,26 150,22 198,26 190,34 150,32 100,38 60,40 30,44" />
+      <polygon fill="currentColor" points="70,40 78,54 84,40" />
+    </symbol>
+  </svg>
+
   <header class="site-header">
     <nav class="nav container" aria-label="Navigation principale">
       <a href="#top" class="logo">
@@ -54,8 +61,12 @@
 
   <main id="main">
     <!-- ===================== HERO ===================== -->
-    <section id="top" class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <section id="top" class="hero hero--fusion">
+      <div class="hero-scene" aria-hidden="true">
+        <div class="hero-floor"><div class="hero-grid-base"></div></div>
+        <div class="hero-horizon"></div>
+        <div class="hero-flash"></div>
+      </div>
       <div class="container hero-grid">
         <div class="hero-inner">
           <p class="hero-eyebrow"><span class="pulse"></span> <span data-bind="role">Créateur de sites internet</span></p>
@@ -76,24 +87,11 @@
           </ul>
         </div>
 
-        <!-- Visuel : maquette de navigateur en verre (illustre ce que je livre) -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="mock-window">
-            <div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-url">votre-entreprise.fr</span></div>
-            <div class="mock-body">
-              <div class="mock-hero">
-                <span class="mock-badge">★ 4,9 · Google</span>
-                <strong>Votre Entreprise</strong>
-                <span class="mock-btn">Appeler maintenant</span>
-              </div>
-              <div class="mock-cards">
-                <span class="mc mc-1"></span><span class="mc mc-2"></span>
-                <span class="mc mc-3"></span><span class="mc mc-4"></span>
-              </div>
-            </div>
+        <!-- Visuel : logo crocodile en 3D extrudé, posé sur la grille -->
+        <div class="hero-visual hero-logo3d-stage" aria-hidden="true">
+          <div class="hero-logo-float">
+            <div class="hero-logo3d" id="heroLogo3d"></div>
           </div>
-          <div class="hero-chip chip-a">📞 Appel en 1 clic</div>
-          <div class="hero-chip chip-b">⚡ &lt; 2s de chargement</div>
         </div>
       </div>
     </section>
@@ -377,5 +375,6 @@
 
   <script src="js/config.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/hero.js"></script>
 </body>
 </html>
