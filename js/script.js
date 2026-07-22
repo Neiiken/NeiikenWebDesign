@@ -21,8 +21,6 @@
     if (fn) fn(el);
   });
 
-  document.title = cfg.brand + " — " + cfg.role;
-
   /* ---------- Téléphone : affiché seulement s'il est renseigné ---------- */
   var phoneItem = document.getElementById("phone-item");
   if (phoneItem && cfg.phone) phoneItem.hidden = false;

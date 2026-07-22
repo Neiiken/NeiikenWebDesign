@@ -203,9 +203,18 @@ ul,ol{margin:0;padding:0;}
 .section{padding:var(--space-20) 0;}
 .section-head{margin-bottom:var(--space-10);max-width:46rem;}
 .section-eyebrow{display:inline-block;color:var(--accent);font-weight:700;font-size:var(--text-xs);letter-spacing:.1em;text-transform:uppercase;margin-bottom:var(--space-3);}
-.section-head h2,.section h2{font-size:var(--text-3xl);}
+.section-head h1,.section-head h2,.section h2{font-size:var(--text-3xl);}
 .section-sub{color:var(--text-muted);font-size:var(--text-md);margin-top:var(--space-3);}
 .lead{font-size:var(--text-md);color:var(--text);}
+
+/* Page légale */
+.legal-body{max-width:42rem;}
+.legal-body h2{font-size:var(--text-lg);margin:var(--space-8) 0 var(--space-3);}
+.legal-body h2:first-child{margin-top:0;}
+.legal-body p{font-size:var(--text-sm);color:var(--text-muted);}
+.legal-body strong{color:var(--text);}
+.legal-body a{text-decoration:underline;}
+.legal-body code{font-size:.85em;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.1rem .4rem;}
 
 /* =========================================================
    STAT BAND — bandeau éditorial toujours sombre (clair ou dark mode)
