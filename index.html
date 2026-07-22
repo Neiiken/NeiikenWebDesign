@@ -3,131 +3,375 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aymeric Cambier — Portfolio</title>
-  <meta name="description" content="Portfolio d'Aymeric Cambier" />
-  <meta name="theme-color" content="#3457d5" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233457d5'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E" />
+
+  <title>Aymeric Cambier — Création de sites internet pour entreprises locales</title>
+  <meta name="description" content="Vous êtes visible sur Google mais vous n'avez pas de site ? Je crée des sites vitrines modernes, rapides et optimisés pour transformer vos recherches locales en clients. Devis gratuit." />
+  <meta name="theme-color" content="#141414" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aymeric Cambier — Création de sites internet" />
+  <meta property="og:description" content="Le site qui manque à votre entreprise locale. Moderne, rapide, optimisé pour Google. Devis gratuit." />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23141414'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='800' fill='white' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Fraunces:ital,wght@1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
   <header class="site-header">
-    <nav class="nav container">
-      <a href="#top" class="logo">Aymeric&nbsp;Cambier</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#skills">Compétences</a></li>
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#top" class="logo" data-bind="brand">Aymeric Cambier</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#offre">Ce que je fais</a></li>
+        <li><a href="#process">Méthode</a></li>
+        <li><a href="#demo">Exemple</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Changer de thème" title="Changer de thème">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm14 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1ZM6.3 6.3a1 1 0 0 1 1.4 0l.7.7a1 1 0 1 1-1.4 1.4l-.7-.7a1 1 0 0 1 0-1.4Zm9.9 9.9a1 1 0 0 1 1.4 0l.7.7a1 1 0 0 1-1.4 1.4l-.7-.7a1 1 0 0 1 0-1.4Zm1.4-9.9a1 1 0 0 1 0 1.4l-.7.7a1 1 0 1 1-1.4-1.4l.7-.7a1 1 0 0 1 1.4 0ZM7.7 16.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.4-1.4l.7-.7a1 1 0 0 1 1.4 0Z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Devis gratuit</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
-  <main>
-    <section id="top" class="hero container">
-      <div>
-        <p class="hero-eyebrow">Bonjour, je suis</p>
-        <h1>Aymeric Cambier</h1>
-        <p class="hero-tagline">Titre / rôle — courte phrase d'accroche décrivant ce que vous faites.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-inner">
+          <p class="hero-eyebrow"><span class="pulse"></span> <span data-bind="role">Créateur de sites internet</span></p>
+          <h1>Votre entreprise est sur Google.<br /><span class="grad-text">Il lui manque un site.</span></h1>
+          <p class="hero-tagline">
+            Vos futurs clients vous cherchent en ligne — et tombent sur une simple fiche.
+            Je crée le site vitrine <em class="serif-em">moderne et rassurant</em> qui transforme
+            ces recherches en appels, en visites et en devis.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Obtenir un devis gratuit</a>
+            <a href="#demo" class="btn btn-secondary btn-lg">Voir un exemple</a>
+          </div>
+          <ul class="hero-badges">
+            <li>Livré en 5 à 10 jours</li>
+            <li>Optimisé mobile &amp; Google</li>
+            <li>Sans engagement</li>
+          </ul>
+        </div>
+
+        <!-- Visuel : maquette de navigateur en verre (illustre ce que je livre) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="mock-url">votre-entreprise.fr</span></div>
+            <div class="mock-body">
+              <div class="mock-hero">
+                <span class="mock-badge">★ 4,9 · Google</span>
+                <strong>Votre Entreprise</strong>
+                <span class="mock-btn">Appeler maintenant</span>
+              </div>
+              <div class="mock-cards">
+                <span class="mc mc-1"></span><span class="mc mc-2"></span>
+                <span class="mc mc-3"></span><span class="mc mc-4"></span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-chip chip-a">📞 Appel en 1 clic</div>
+          <div class="hero-chip chip-b">⚡ &lt; 2s de chargement</div>
         </div>
       </div>
-      <div class="hero-avatar" aria-hidden="true">AC</div>
     </section>
 
-    <section id="about" class="section container reveal">
-      <span class="section-eyebrow">Qui suis-je</span>
-      <h2>À propos</h2>
-      <div class="about-grid">
-        <p class="about-text">
-          Présentez-vous ici en quelques phrases : votre parcours, ce qui vous
-          passionne, et ce que vous recherchez (opportunités, collaborations,
-          projets freelance...).
-        </p>
-        <ul class="about-highlights">
-          <li><strong>01</strong> Point clé sur votre parcours ou expertise</li>
-          <li><strong>02</strong> Point clé sur une réalisation marquante</li>
-          <li><strong>03</strong> Point clé sur ce que vous recherchez</li>
-        </ul>
+    <!-- ===================== SECTEURS (bandeau) ===================== -->
+    <section class="band band--tint sectors-band">
+      <div class="container">
+        <p class="sectors-label">Pensé pour les entreprises locales</p>
+        <ul class="sectors" id="sectors"><!-- injecté par config.js --></ul>
       </div>
     </section>
 
-    <section id="projects" class="section container reveal">
-      <span class="section-eyebrow">Sélection</span>
-      <h2>Projets</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="card-media" aria-hidden="true"><span class="card-index">01</span></div>
-          <div class="card-body">
-            <h3>Nom du projet 1</h3>
-            <p>Courte description du projet, technologies utilisées, et résultat obtenu.</p>
-            <a href="#" class="card-link">Voir le projet →</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media" aria-hidden="true"><span class="card-index">02</span></div>
-          <div class="card-body">
-            <h3>Nom du projet 2</h3>
-            <p>Courte description du projet, technologies utilisées, et résultat obtenu.</p>
-            <a href="#" class="card-link">Voir le projet →</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media" aria-hidden="true"><span class="card-index">03</span></div>
-          <div class="card-body">
-            <h3>Nom du projet 3</h3>
-            <p>Courte description du projet, technologies utilisées, et résultat obtenu.</p>
-            <a href="#" class="card-link">Voir le projet →</a>
-          </div>
-        </article>
+    <!-- ===================== CONFIANCE (bandeau sombre éditorial) ===================== -->
+    <section class="stat-band">
+      <div class="container stat-inner">
+        <p class="stat-eyebrow">Pourquoi passer par moi</p>
+        <h2 class="stat-headline">Un site <em class="serif-em">pensé pour vendre</em>, livré par une seule personne, sans jargon.</h2>
+        <div class="stat-row">
+          <div><strong>5–10j</strong><span>de conception à la mise en ligne</span></div>
+          <div><strong>100%</strong><span>sur-mesure, pas de template figé</span></div>
+          <div><strong>1</strong><span>interlocuteur, du premier appel au support</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="skills" class="section container reveal">
-      <span class="section-eyebrow">Boîte à outils</span>
-      <h2>Compétences</h2>
-      <ul class="tag-list">
-        <li>Compétence 1</li>
-        <li>Compétence 2</li>
-        <li>Compétence 3</li>
-        <li>Compétence 4</li>
-        <li>Compétence 5</li>
-        <li>Compétence 6</li>
-      </ul>
+    <!-- ===================== PROBLÈME ===================== -->
+    <section id="probleme" class="section">
+      <div class="container reveal">
+        <header class="section-head">
+          <span class="section-eyebrow">Le constat</span>
+          <h2>Être trouvable ne suffit plus</h2>
+          <p class="section-sub">Une fiche Google, c'est un bon début. Mais sans site, vous laissez le contrôle — et des clients — à la concurrence.</p>
+        </header>
+        <div class="problem-grid">
+          <article class="problem-card pc-1">
+            <span class="p-emoji" aria-hidden="true">🔍</span>
+            <h3>On vous cherche, on ne vous trouve pas vraiment</h3>
+            <p class="muted">Horaires, tarifs, réalisations, réassurance… tout ce qui déclenche le contact manque à l'appel.</p>
+          </article>
+          <article class="problem-card pc-2">
+            <span class="p-emoji" aria-hidden="true">📱</span>
+            <h3>Une image qui ne vous ressemble pas</h3>
+            <p class="muted">Vous ne maîtrisez ni votre présentation, ni vos photos, ni votre message. Le visiteur repart avec un doute.</p>
+          </article>
+          <article class="problem-card pc-3">
+            <span class="p-emoji" aria-hidden="true">📉</span>
+            <h3>Des clients qui filent chez le voisin</h3>
+            <p class="muted">Face à deux entreprises, on choisit celle qui inspire confiance en ligne. Souvent, celle qui a un vrai site.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section container reveal">
-      <span class="section-eyebrow">Parlons-en</span>
-      <h2>Contact</h2>
-      <p>La meilleure façon de me joindre :</p>
-      <div class="contact-links">
-        <a href="mailto:aymeric.cambier@gmail.com">
-          <svg viewBox="0 0 24 24"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1L19.8 6H4.2ZM20 8.1l-7.4 5.8a1 1 0 0 1-1.2 0L4 8.1V18h16V8.1Z"/></svg>
-          aymeric.cambier@gmail.com
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05C21.6 8.59 22 11.1 22 14.35V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21h-4V9Z"/></svg>
-          LinkedIn
-        </a>
+    <!-- ===================== OFFRE / CE QUE JE FAIS ===================== -->
+    <section id="offre" class="section band band--tint">
+      <div class="container reveal">
+        <header class="section-head">
+          <span class="section-eyebrow">Ma solution</span>
+          <h2>Un site pensé pour convertir, pas pour décorer</h2>
+        </header>
+        <div class="bento">
+          <article class="bento-card bento-a gradient">
+            <h3>Un site vitrine complet</h3>
+            <p>Présentation, services, avis, galerie, contact : tout ce qu'un client veut voir, au bon endroit, sur une page fluide.</p>
+            <span class="bento-deco" aria-hidden="true"></span>
+          </article>
+          <article class="bento-card bento-b">
+            <span class="feat-icon tint-violet" aria-hidden="true">⚡</span>
+            <h3>Rapide comme l'éclair</h3>
+            <p class="muted">Chargement &lt; 2s, score Lighthouse 90+. Google aime, vos visiteurs restent.</p>
+          </article>
+          <article class="bento-card bento-c">
+            <span class="feat-icon tint-magenta" aria-hidden="true">📞</span>
+            <h3>Pensé pour l'action</h3>
+            <p class="muted">Appel en un clic, itinéraire, formulaire : chaque élément guide vers le contact.</p>
+          </article>
+          <article class="bento-card bento-d">
+            <span class="feat-icon tint-teal" aria-hidden="true">🔎</span>
+            <h3>SEO local intégré</h3>
+            <p class="muted">Données structurées, balises optimisées : vous remontez sur « près de moi ».</p>
+          </article>
+          <article class="bento-card bento-e">
+            <span class="feat-icon tint-yellow" aria-hidden="true">🎨</span>
+            <h3>À votre image</h3>
+            <p class="muted">Couleurs, ton, photos : un design sur-mesure, aux standards 2026.</p>
+          </article>
+          <article class="bento-card bento-f">
+            <span class="feat-icon tint-violet" aria-hidden="true">🔒</span>
+            <h3>Clé en main</h3>
+            <p class="muted">Domaine, hébergement, mise en ligne : je m'occupe de tout, vous validez.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" class="section">
+      <div class="container reveal">
+        <header class="section-head">
+          <span class="section-eyebrow">Comment ça se passe</span>
+          <h2>Simple, rapide, sans jargon</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>On échange</h3>
+            <p class="muted">Un appel de 15 min pour comprendre votre métier, vos clients et votre objectif. Gratuit et sans engagement.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Je conçois</h3>
+            <p class="muted">Je récupère vos infos (fiche Google, photos, avis) et je crée une première version à votre image.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>On ajuste ensemble</h3>
+            <p class="muted">Vous relisez, on peaufine les textes et le design jusqu'à ce que ce soit parfait.</p>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <h3>Mise en ligne</h3>
+            <p class="muted">Domaine, hébergement, référencement : votre site est en ligne et prêt à travailler pour vous.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== DÉMO ===================== -->
+    <section id="demo" class="section band band--warm">
+      <div class="container reveal">
+        <div class="demo-grid">
+          <div>
+            <span class="section-eyebrow">Un exemple concret</span>
+            <h2>Voici le type de site que je livre</h2>
+            <p class="muted">Une vitrine de démonstration pour un artisan : bento grid, avis Google, appel en un clic, carte, dark mode… tout ce qui fait la différence en 2026.</p>
+            <ul class="demo-points">
+              <li>Design moderne &amp; responsive</li>
+              <li>Preuve sociale (avis Google)</li>
+              <li>Conversion : appel, itinéraire, devis</li>
+            </ul>
+            <a href="vitrine/index.html" class="btn btn-primary btn-lg" data-bind="demo" target="_blank" rel="noopener">Ouvrir l'exemple en grand →</a>
+          </div>
+          <a class="demo-frame" href="vitrine/index.html" data-bind="demo" target="_blank" rel="noopener" aria-label="Ouvrir le site de démonstration">
+            <div class="demo-browser">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="demo-url">martin-plomberie.fr</span>
+            </div>
+            <div class="demo-preview">
+              <span class="demo-tag">Aperçu</span>
+              <strong>Martin Plomberie</strong>
+              <p>Plombier à Lyon · ★ 4,9</p>
+              <span class="demo-cta">Appeler maintenant</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA BAND ===================== -->
+    <section class="cta-band">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <h2>Prêt à transformer votre présence Google en clients ?</h2>
+        <p>Un premier échange gratuit, une idée offerte, un devis clair sous 24h. Sans engagement.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-white btn-lg">Lancer mon projet</a>
+          <a href="#demo" class="btn btn-outline-white btn-lg">Voir un exemple</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section id="apropos" class="section">
+      <div class="container reveal">
+        <div class="about-grid">
+          <div class="about-avatar" aria-hidden="true">AC</div>
+          <div>
+            <span class="section-eyebrow">Qui je suis</span>
+            <h2>Aymeric Cambier</h2>
+            <p class="lead">Développeur et créateur de sites internet, j'aide les entreprises locales à
+              <em class="serif-em">exister vraiment sur le web</em> — pas juste à figurer sur une carte.</p>
+            <p>Je travaille en direct, sans intermédiaire : vous parlez à la personne qui code votre site.
+              Résultat : des délais courts, des tarifs justes, et un interlocuteur qui reste joignable
+              après la mise en ligne.</p>
+            <div class="about-links">
+              <a href="mailto:aymeric.cambier@gmail.com" data-bind="mail" class="btn btn-secondary btn-sm">Me contacter</a>
+              <a href="https://github.com/" data-bind="github" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/" data-bind="linkedin" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05C21.6 8.59 22 11.1 22 14.35V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21h-4V9Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section band band--tint">
+      <div class="container reveal">
+        <header class="section-head">
+          <span class="section-eyebrow">Questions fréquentes</span>
+          <h2>Ce qu'on me demande souvent</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Combien de temps pour avoir mon site ?</summary>
+            <p class="muted">Comptez 5 à 10 jours entre notre premier échange et la mise en ligne, selon vos retours et le contenu à préparer.</p>
+          </details>
+          <details>
+            <summary>Je n'ai pas de photos ni de textes, c'est un problème ?</summary>
+            <p class="muted">Non. Je pars de votre fiche Google (photos, avis, infos) et je rédige les textes avec vous. On complète au besoin.</p>
+          </details>
+          <details>
+            <summary>Combien ça coûte ?</summary>
+            <p class="muted">Chaque projet est différent. Après notre échange, je vous envoie un devis clair et sans surprise, adapté à vos besoins réels.</p>
+          </details>
+          <details>
+            <summary>Pourrai-je modifier mon site plus tard ?</summary>
+            <p class="muted">Bien sûr. Je peux m'occuper des évolutions, ou vous former à gérer vous-même le contenu.</p>
+          </details>
+          <details>
+            <summary>Est-ce que ça va m'aider à être mieux référencé ?</summary>
+            <p class="muted">Un site rapide, structuré et optimisé pour le local aide Google à mieux vous comprendre et à vous proposer sur les recherches « près de moi ».</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <div class="contact-wrap">
+          <div class="contact-copy">
+            <span class="section-eyebrow">On en parle ?</span>
+            <h2>Discutons de votre projet</h2>
+            <p class="muted">Décrivez-moi votre activité en deux lignes. Je vous réponds sous 24h avec une première idée et un devis clair — gratuitement.</p>
+            <ul class="contact-quick">
+              <li><a href="mailto:aymeric.cambier@gmail.com" data-bind="mail"><span class="cq-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1L19.8 6H4.2ZM20 8.1l-7.4 5.8a1 1 0 0 1-1.2 0L4 8.1V18h16V8.1Z"/></svg></span><div><strong data-bind="emailText">aymeric.cambier@gmail.com</strong><span class="muted">Réponse sous 24h</span></div></a></li>
+              <li id="phone-item" hidden><a href="#" data-bind="tel"><span class="cq-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1l-2.2 2.2Z"/></svg></span><div><strong data-bind="phoneText"></strong><span class="muted">Appel direct</span></div></a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name">Votre nom</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="cf-contact">E-mail ou téléphone</label>
+              <input id="cf-contact" name="contact" type="text" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="cf-activity">Votre activité</label>
+              <input id="cf-activity" name="activity" type="text" placeholder="Ex. plombier, restaurant, coiffeur…" />
+            </div>
+            <div class="field">
+              <label for="cf-message">Votre projet en quelques mots</label>
+              <textarea id="cf-message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Envoyer ma demande</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p class="container">&copy; <span id="year"></span> Aymeric Cambier</p>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-bind="brand">Aymeric Cambier</span> · Création de sites internet</p>
+      <nav class="footer-links" aria-label="Liens de bas de page">
+        <a href="#offre">Services</a>
+        <a href="#demo">Exemple</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </footer>
 
+  <script src="js/config.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
