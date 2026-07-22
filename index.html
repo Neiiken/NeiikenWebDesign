@@ -18,7 +18,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Fraunces:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Fraunces:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Fraunces:ital,wght@1,500&display=swap" /></noscript>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -34,7 +35,7 @@
   <header class="site-header">
     <nav class="nav container" aria-label="Navigation principale">
       <a href="#top" class="logo">
-        <img src="assets/logo/logo-mark.svg" alt="" width="32" height="32" class="logo-icon" />
+        <img src="assets/logo/logo-mark.svg" alt="" width="32" height="32" class="logo-icon" decoding="async" />
         <span data-bind="brand">Aymeric Cambier</span>
       </a>
 
@@ -373,8 +374,8 @@
     </div>
   </footer>
 
-  <script src="js/config.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/hero.js"></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/hero.js" defer></script>
 </body>
 </html>
