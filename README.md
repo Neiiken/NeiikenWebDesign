@@ -17,12 +17,18 @@ js/config.js       ← TES INFOS : nom, email, téléphone, secteurs, liens
 js/script.js       binding, rendu des secteurs, thème, interactions
 
 vitrine/           démo client (template site vitrine local business)
+christol/          site client — Sébastien Christol, peintre en bâtiment à Nîmes
 portfolio/         ancien portfolio personnel, conservé en sous-dossier
 serve.ps1          petit serveur statique pour l'aperçu local
 ```
 
 Le dossier `vitrine/` sert de **démonstration** : le bouton « Voir un exemple »
 l'ouvre. Garde-le au même niveau que ce fichier.
+
+Le dossier `christol/` est un **site client complet et autonome** (DA « Nuancier &
+matière », nuancier interactif, mentions légales). Il a ses propres polices et son
+propre `serve.ps1` (port 8091) : il peut être déployé seul. Voir `christol/README.md`
+pour la liste des informations à renseigner avant mise en ligne.
 
 ## Personnaliser (l'essentiel dans `js/config.js`)
 
