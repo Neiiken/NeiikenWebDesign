@@ -41,6 +41,36 @@ et `inkOn()` choisit l'encre claire ou foncée en comparant les deux rapports WC
 - Zéro requête externe (polices auto-hébergées), accessibilité : lien d'évitement, focus
   visibles, `aria-pressed` sur tous les sélecteurs, `prefers-reduced-motion` respecté.
 
+## Mobile
+
+Le site est pensé téléphone d'abord — c'est là qu'arrive une recherche « peintre près de
+moi ». Ce qui a été traité explicitement :
+
+- **Ancres sous le header collant.** `scroll-margin-top: calc(var(--header-h) + 12px)` sur
+  chaque section : sans ça, un lien du menu déposait le titre derrière le header et le
+  visiteur atterrissait au milieu du contenu. Le bug touchait aussi le desktop.
+- **Cibles tactiles ≥ 44 px** (bascule de thème, bouton d'appel du header, burger,
+  sélecteurs du nuancier, liens de pied de page). La règle se déclenche sur
+  `(pointer: coarse)` **ou** `(max-width: 720px)` : la seconde condition rattrape les
+  téléphones dont le navigateur annonce un pointeur fin.
+- **Deux effets coûteux coupés sous 720 px** : le calque de grain plein écran en
+  `position: fixed` + `mix-blend-mode`, et le `backdrop-filter` du header. Tous deux se
+  recalculent à chaque image pendant le défilement — ce sont les deux premières causes de
+  saccade sur mobile. La texture reste portée par les bandes teintées, qui défilent avec
+  le contenu et ne coûtent rien.
+- **Bandeau défilant mis en pause hors champ** (IntersectionObserver) : plus rien ne tourne
+  pendant que le visiteur lit le reste de la page.
+- **Densité** : réalisations et chiffres clés passent sur deux colonnes sous 620 px.
+  La page est passée de ~16 500 px à ~14 500 px de haut, sans rien retirer du contenu.
+- **Boutons d'appel à l'action pleine largeur** sous 430 px, champs de saisie à 16 px
+  (en dessous, iOS zoome tout seul au focus et casse la mise en page).
+- **Menu déroulant limité à la hauteur de l'écran** (`100dvh`) et rendu défilant : en
+  paysage sur téléphone il dépassait.
+- Toast du nuancier plafonné à `92vw` et remonté au-dessus du bouton d'appel flottant.
+
+Vérifié à 375 px et 1280 px : aucun débordement horizontal, aucune cible sous 44 px,
+et le desktop garde sa densité et ses effets d'origine.
+
 ## Structure
 
 ```

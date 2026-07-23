@@ -316,6 +316,14 @@
     bandTrack.appendChild(clone);
   }
 
+  // Le défilement s'arrête dès que le bandeau sort de l'écran
+  var band = $(".band");
+  if (band && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      band.classList.toggle("is-offscreen", !entries[0].isIntersecting);
+    }, { threshold: 0 }).observe(band);
+  }
+
   /* =========================================================
      8. OUTILS COULEUR — conversions + dérivation d'un accent
         toujours lisible sur le fond courant.
